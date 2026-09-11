@@ -1,0 +1,442 @@
+/* CSS for index.html */
+
+/* Lucida Calligraphy Regular */
+@font-face {
+    font-family: 'LucidaCalligraphy';
+    src: url('../fonts/Lucida-Calligraphy/LucidaUnicodeCalligraphy.woff2') format('woff2'),
+         url('../fonts/Lucida-Calligraphy/LucidaUnicodeCalligraphy.woff') format('woff'),
+         url('../fonts/Lucida-Calligraphy/LucidaUnicodeCalligraphy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Lucida Calligraphy Bold */
+@font-face {
+    font-family: 'LucidaCalligraphy';
+    src: url('../fonts/Lucida-Calligraphy/LucidaUnicodeCalligraphyBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Omegle Regular */
+@font-face {
+    font-family: 'Omegle';
+    src: url('../fonts/Omegle/OMEGLE.woff2') format('woff2'),
+         url('../fonts/Omegle/OMEGLE.woff') format('woff'),
+         url('../fonts/Omegle/OMEGLE.ttf') format('truetype'),
+         url('../fonts/Omegle/OMEGLE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Omegle Bold */
+@font-face {
+    font-family: 'Omegle';
+    src: url('../fonts/Omegle/OMEGLE-Bold.ttf') format('truetype'),
+         url('../fonts/Omegle/OMEGLE-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.section1 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.s1-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.s1-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    background: rgba(0, 0, 0, 0.5); /* optional semi-transparent overlay */
+}
+
+.s1-content h1 {
+    font-family: 'Rockwell', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem); /* responsive scaling */
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.s1-content p {
+    font-family: 'LucidaCalligraphy', cursive;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    margin-bottom: 30px;
+    font-weight: 400;
+    max-width: 800px;
+}
+
+.learnbtn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.learnbtn:hover {
+    background-color: #218838;
+    transform: translateY(-2px); /* subtle hover lift */
+}
+
+.section2{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.s2-img{    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.section2{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.s2-img{    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.s2-content{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.s2-content h1 {
+    font-family: 'Omegle', sans-serif;
+    font-size: clamp(4rem, 6vw, 8rem);
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.s2-content p {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    margin-bottom: 30px;
+    font-weight: 400;
+    max-width: 800px;
+}
+
+.section3{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.s3-content{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.s3-img{    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.s3-content h1 {
+    font-family: 'Omegle', sans-serif;
+    font-size: clamp(2rem, 4vw, 6rem);
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.s3-content h2 {
+    font-family: 'Omegle', sans-serif;
+    font-size: clamp(2rem, 2vw, 3rem);
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.battery-specs {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.battery-block {
+    display: flex;
+    flex-direction: column; /* stack image and heading vertically */
+    align-items: center;
+    text-align: center;
+}
+
+.battery {
+    height: 300px;
+    margin-bottom: 12px;
+}
+
+.specs {
+    max-width: 600px;
+    text-align: left;
+}
+
+.specs strong{
+    color: #25D366;
+}
+
+.section4 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.s4-img {    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.s4-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.s4 h1{
+    margin-top: 20px;
+}
+
+.s4-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Slider styling */
+.slider {
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    width: 100%; /* two slides side by side */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide h1{
+    font-family: 'Rockwell', serif;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.arrow{
+    position: relative;
+    display: inline-block;
+    background: rgba(0,0,0,0);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: background 0.3s, transform 0.2s;
+    margin: 10px 8px;
+}
+
+
+.arrow-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.specs-text {
+    max-width: 400px;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.specs-text strong {
+    color: #25D366;
+}
+
+
+/* Section 5 */
+.section5 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.s5-img {    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.s5-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 40 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.price-buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.price-tag {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.buy-btn {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buy-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+@media(max-width: 600px){
+    .section1{
+        height: 400px;
+    }
+}
