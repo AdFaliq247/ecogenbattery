@@ -116,6 +116,7 @@
     height: 100%; 
     background-color: rgba(0,0,0,0.7);
     backdrop-filter: blur(4px); /* subtle blur effect */
+    overflow-y: auto;
 }
 
 /* Modal box */
@@ -124,34 +125,38 @@
     margin: 10% auto;
     padding: 30px;
     border-radius: 12px;
-    width: 70%;
-    max-width: 700px;
+    width: 90%;
+    max-width: 600px;
     text-align: justify;
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
     font-family: 'JetBrains Mono', monospace;
     animation: fadeIn 0.4s ease;
+    position: relative;
 }
 
 /* Modal heading */
 .modal-content h2 {
     font-family: 'Omegle', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 1.6rem;
+    margin-bottom: 16px;
     color: #28a745;
+    text-align: center;
 }
 
 /* Modal text */
 .modal-content p {
     font-family: 'JetBrainsMono', monospace;
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.5;
     color: #333;
 }
 
 /* Close button */
 .close {
-    float: right;
-    font-size: 28px;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 24px;
     font-weight: bold;
     cursor: pointer;
     color: #666;
@@ -392,5 +397,27 @@
 
     .batteryBooster{
         max-height: 300px;
+    }
+
+    .modal-content{
+        width: 80%;
+        margin: 10% auto;
+        padding: 18px;
+        font-size: 0.9rem;
+    }
+
+    .modal-content h2{
+        font-size: 1.4rem;
+    }
+
+    .modal-content p{
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .close{
+        font-size: 22px;
+        top: 8px;
+        right: 12px;
     }
 }
