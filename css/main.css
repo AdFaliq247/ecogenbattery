@@ -141,15 +141,15 @@ body.menu-open {
 /* Mobile View */
 @media (max-width: 600px) {
     .top-navbar {
-        justify-content: space-between;
+        justify-content: center;
         padding: 8px 16px;
         z-index: 1001;
     }
 
-    .logo{
-        margin-left: 0;
-        max-height: 80px;
-        max-width: 60%;
+    .topLogo{
+        display: block;
+        margin-left: 0 auto;
+        max-height: 40px;
         height: auto;
         width: auto;
     }
