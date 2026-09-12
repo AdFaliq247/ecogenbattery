@@ -301,67 +301,6 @@
     width: auto;
 }
 
-/* Slider styling */
-.slider {
-    width: 100%;
-    max-width: 350px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.slides {
-    display: flex;
-    width: 100%; /* two slides side by side */
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    width: 100%;
-    flex-shrink: 0;
-}
-
-.slide h1{
-    font-family: 'Rockwell', serif;
-    font-size: clamp(2rem, 4vw, 2.5rem);
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: contain;
-}
-
-.arrow{
-    position: relative;
-    display: inline-block;
-    background: rgba(0,0,0,0);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    transition: background 0.3s, transform 0.2s;
-    margin: 10px 8px;
-}
-
-
-.arrow-container{
-    display: flex;
-    justify-content: center;
-    margin-top: 12px;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
 .specs-text {
     max-width: 400px;
     text-align: left;
@@ -444,6 +383,14 @@
 
 @media(max-width: 600px){
     .section1{
+        height: 400px
+    }
+
+    .section2{
         height: 400px;
+    }
+
+    .batteryBooster{
+        max-height: 300px;
     }
 }
