@@ -149,7 +149,7 @@ body.menu-open {
     .topLogo{
         display: block;
         margin-left: 0 auto;
-        max-height: 40px;
+        max-height: 60px;
         height: auto;
         width: auto;
     }
