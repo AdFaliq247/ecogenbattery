@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MFF Green Technology</title>
-    <link rel="icon" type="image/x-icon" href="media/MFF Green Technology (White Font).png">
+    <link rel="icon" type="image/x-icon" href="media/logo/MFF Green Technology (White Font).png">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
@@ -17,7 +17,7 @@
             <!-- Top Navigation -->
             <nav class="top-navbar">
                 <a href="index.html">
-                    <img src="media/Official Logo with Tagline.png" alt="logo" class="topLogo">
+                    <img src="media/logo/Official Logo with Tagline.png" alt="logo" class="topLogo">
                 </a>
             </nav>
         </header>
@@ -32,7 +32,34 @@
             <div class="s1-content">
                 <h1>Malaysian-owned startup committed <br> to reshaping how energy is stored and use</h1>
                 <p>Advancing the Future of Energy Storage</p>
-                <a href="aboutUs.html" class="learnbtn">Get to know us →</a>
+                <button class="learnbtn" id="companyInfoBtn">Get to know us →</button>
+            </div>
+        </div>
+
+        <!-- Section 1 Pop Up Message Button -->
+        <div id="companyModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>About Us</h2>
+                <p>
+                    MFF Green Technology is a Malaysian-owned startup founded in 2020, 
+                    dedicated to creating safe, eco-friendly, and high-performance 
+                    energy storage solutions.
+
+                    The company aims to solve problems with 
+                    conventional batteries—such as leakage, fire risks, short lifespan, 
+                    and slow charging—by using innovative materials and manufacturing methods.
+
+                    Their mission is to build trust in technology that 
+                    protects people, preserves nature, and powers progress.
+                    <br><br>
+                    <strong>We don't just build batteries.</strong>
+                    <br>
+                    <strong>
+                        We build trust in technology that protects 
+                        people, preserves nature, and powers progress.
+                    </strong>
+                </p>
             </div>
         </div>
 
@@ -43,41 +70,30 @@
             <div class="s2-content">
                 <h1>Eco-Gen Battery™</h1>
                 <p>Revolutionizing Energy with Safe, Fast, and Green Power</p>
-                <a href="ecogenbattery.html" class="learnbtn">Learn More</a>
+                <button class="learnbtn" id="brandInfoBtn">Learn More</a>
             </div>
         </div>
 
+        <!-- Section 2 Pop Up Message Button -->
+        <div id="brandModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>What is Eco-Gen Battery™?</h2>
+                <p>
+                    Eco-Gen Battery is a brand that 
+                    represents advanced energy solutions with a focus on environmental
+                    sustainability. 
+                    <br><br>
+                    The name <strong>"Eco-Gen"</strong> stands for <strong>"Environmental Generation,"</strong> 
+                    highlighting the brand's commitment to developing eco-friendly and 
+                    innovative battery technologies.
+                </p>
+            </div>
+        </div>        
+
         <!-- Section 3 Content -->
         <div class="section3">
-            <img src="media/green.avif" alt="green" class="s3-img">
-
-            <div class="s3-content">
-                <h1>Eco-Gen Battery (Motorcycle)</h1>
-                <br>
-            
-                <div class="battery-specs">
-                    <img src="media/Bateri Motor_35Wh.png" alt="Bateri" class="battery">
-
-                    <div class="specs">
-                        <p>
-                            <strong>UNIQUE DESIGN</strong><br>
-                            Fits all motorcycle types seamlessly.<br><br>
-
-                            <strong>COST SAVINGS</strong><br>
-                            Long lifespan (up to 20,000 cycles) reduces replacement and maintenance cost.<br><br>
-
-                            <strong>HIGH PERFORMANCE</strong><br>
-                            Strong cranking power ensures reliable starts and consistent performance. <br><br>
-
-                            <strong>USER SAFETY</strong><br>
-                            Non-flammable materials and overcharge protection provide secure usage. <br><br>
-
-                            <strong>ENVIRONMENT FRIENDLY</strong><br>
-                            Built with non-toxic, biodegradable materials for sustainability.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <img src="media/Eco-Gen Battery (Booster)_Header.png" alt="Eco-Gen Battery (Booster)" class="s3-img">
         </div>
 
         <!-- Section 4 Content -->
@@ -88,49 +104,35 @@
                 <h1>Specifications</h1>
 
                 <div class="s4-flex">
-                    <div class="slider">
-                        <div class="slides">
-                            <div class="slide">
-                                <img src="media/Bateri Motor_35Wh.png" alt="Square Type">
-                                <h1><strong>Square Type</strong></h1>
-                            </div>
-                            <div class="slide">
-                                <img src="media/12V 35Wh - straight.png" alt="Straight Type">
-                                <h1><strong>Straight Type</strong></h1>
-                            </div>
-                        </div>
-
-                        <div class="arrow-container">
-                            <button class="arrow prev">&#10094;</button>
-                            <button class="arrow next">&#10095;</button>
-                        </div>
-                    </div>
-
+                    <img src="media/Car Booster.PNG" alt="Eco-Gen Battery Booster" class="batteryBooster">
 
                     <div class="specs-text">
                         <p>
                             <strong>Dimension:</strong><br>
-                            Square type - 113L x 70W x 85H (mm) <br>
-                            Straight type - 110L X 54W x 85H (mm) <br><br>
+                            125mm (L) x 80mm (W) x 32mm (H) <br><br>
 
                             <strong>Capacity:</strong><br>
-                            12V 35Wh <br><br>
+                            12V 17Wh <br><br>
 
-                            <strong>Cycle Life:</strong><br>
-                            Up to 20,000 charge/discharge cycles <br><br>
+                            <strong>Cable Length:</strong><br>
+                            400mm <br><br>
 
-                            <strong>Safety:</strong><br>
-                            Overcharge protection, non-flammable material <br><br>
+                            <strong>Compatibility:</strong><br>
+                            Vehicles up to 2.5cc <br><br>
 
-                            <strong>Eco-Friendly:</strong><br>
-                            Built with recyclable and biodegradable components
+                            <strong>Warranty:</strong><br>
+                            12 months <br><br>
+
+                            <strong>Shipping</strong><br>
+                            Certified for safe global transport
+
                         </p>
                     </div>
                 </div>
 
                 <div class="price-buy">
-                    <h1 class="price-tag"><strong>RM 249</strong></h1>
-                    <a href="https://wa.me/60105472657" target="_blank" rel="noopener noreferrer" class="buy-btn">
+                    <h1 class="price-tag"><strong>RM 299</strong></h1>
+                    <a href="https://my.shp.ee/KeLJL6JH" target="_blank" rel="noopener noreferrer" class="buy-btn">
                         Buy Now
                     </a>
                 </div>
@@ -141,14 +143,47 @@
         <footer class="footer">
             <!-- Footer Top -->
             <div class="footer-content">
+                <!-- Contact Us -->
+                <div class="footer-contactUs">
+                    <p>Contact Us</p>
+                    <p>
+                        Email <br>
+                        <strong>
+                            <a href="mailto:info@mffgreentechnology.com">info@mffgreentechnology.com</a>
+                        </strong>
+                    </p>
+                    <p>
+                        Customer Service <br>
+                        <strong>
+                            <img src="media/icon/whatsapp.png" alt="Whatsapp Icon" class="cs-icon">
+                            <a href="tel:0105472657">010-547 2657</a>
+                        </strong>
+                    </p>
+                </div>
+
                 <!-- Social Links -->
                 <div class="footer-social">
                     <p>Follow Us</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/mffgreentechnology" target="_blank" rel="noopener noreferrer"><img src="media/icon/facebook.png" alt="Facebook icon"></a>
-                        <a href="https://www.instagram.com/mffgreentechnology/" target="_blank" rel="noopener noreferrer"><img src="media/icon/instagram.png" alt="Instagram icon"></a>
+                        <a href="https://www.facebook.com/mffgreentechnology" target="_blank" rel="noopener noreferrer">
+                            <img src="media/icon/facebook.png" alt="Facebook Icon">
+                        </a>
+                        
+                        <a href="https://www.instagram.com/mffgreentechnology/" target="_blank" rel="noopener noreferrer">
+                            <img src="media/icon/instagram.png" alt="Instagram Icon">
+                        </a>
+
+                        <a href="https://my.shp.ee/B9w2afPx" target="_blank" rel="noopener noreferrer">
+                            <img src="media/icon/shopee.png" alt="Shopee Icon">
+                        </a>
                     </div>
                 </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>
+                    &copy; 2026 MFF Green Technology. All Rights Reserved.
+                </p>
             </div>
         </footer>
     </div>
