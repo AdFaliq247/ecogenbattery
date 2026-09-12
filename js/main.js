@@ -1,56 +1,26 @@
-const slides = document.querySelector('.slides');
-const slideItems = document.querySelectorAll('.slide');
-const slideCount = slideItems.length;
-let currentIndex = 0;
+// ====== Pop Up Box Message ======
+// Utility function for modal setup
+function setupModal(modalId, btnId) {
+    const modal = document.getElementById(modalId);
+    const btn = document.getElementById(btnId);
+    const closeBtn = modal.querySelector(".close");
 
-// Clone first and last slides
-const firstClone = slideItems[0].cloneNode(true);
-const lastClone = slideItems[slideCount - 1].cloneNode(true);
+    // Open modal
+    btn.onclick = () => modal.style.display = "block";
 
-slides.appendChild(firstClone);
-slides.insertBefore(lastClone, slideItems[0]);
+    // Close modal when X clicked
+    closeBtn.onclick = () => modal.style.display = "none";
 
-const allSlides = document.querySelectorAll('.slide');
-const totalSlides = allSlides.length;
-
-// Start at the real first slide (index 1 because of prepended clone)
-slides.style.transform = `translateX(-100%)`;
-
-// Function to update slide position
-function updateSlide() {
-    slides.style.transition = "transform 1s ease-in-out";
-    slides.style.transform = `translateX(-${(currentIndex + 1) * 100}%)`;
+    // Close modal when clicking outside
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
 }
 
-// Arrow navigation
-document.querySelector('.next').addEventListener('click', () => {
-    currentIndex++;
-    updateSlide();
-});
+// Setup Section 1 modal
+setupModal("companyModal", "companyInfoBtn");
 
-document.querySelector('.prev').addEventListener('click', () => {
-    currentIndex--;
-    updateSlide();
-});
-
-// Handle transition end for seamless loop
-slides.addEventListener('transitionend', () => {
-    if (currentIndex >= slideCount) {
-        // Jump back to real first slide
-        slides.style.transition = "none";
-        slides.style.transform = `translateX(-100%)`;
-        currentIndex = 0;
-    }
-    if (currentIndex < 0) {
-        // Jump back to real last slide
-        slides.style.transition = "none";
-        slides.style.transform = `translateX(-${slideCount * 100}%)`;
-        currentIndex = slideCount - 1;
-    }
-});
-
-// Auto-slide every 4 seconds
-setInterval(() => {
-    currentIndex++;
-    updateSlide();
-}, 4000);
+// Setup Section 2 modal
+setupModal("brandModal", "brandInfoBtn");
