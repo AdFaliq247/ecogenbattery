@@ -24,3 +24,6 @@ setupModal("companyModal", "companyInfoBtn");
 
 // Setup Section 2 modal
 setupModal("brandModal", "brandInfoBtn");
+
+// Setup Section 5 modal
+setupModal("FAQModal", "FAQInfoBtn");
